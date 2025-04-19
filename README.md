@@ -119,6 +119,9 @@ This system uses Nepal Standard Time (NST). You can adjust the timezone in the A
 Made with 💡 and ❤️ by **Sameer Sah** <br>
 Inspired by the power of automation and microcontrollers.
 
+--- 
+> **⚠️ Note:**  
+> This is only a **prototype**, not the whole system. It is meant for demonstration purposes and further development is required for full deployment.
 
 
 ---
