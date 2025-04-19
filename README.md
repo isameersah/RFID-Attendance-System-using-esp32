@@ -1,107 +1,126 @@
-🔐 RFID Attendance System using ESP32
-An IoT-based smart RFID attendance system using ESP32, RC522 RFID module, and LCD Display, with real-time data logging directly into Google Sheets. Designed for schools, colleges, or any organization that needs a simple and automated attendance solution.
+# 🔐 RFID Attendance System using ESP32
 
-🚀 Built with two powerful modes:
-➕ User Registration Mode
-📅 Attendance Mode
+![RFID Attendance System Demo](https://cdn.dribbble.com/userupload/22178974/file/original-45a4c26c21e583240c4e1eb529e1d50c.gif)
 
-🕒 All attendance logs are recorded in NST (Nepal Standard Time).
 
-⚙️ Features
-📲 ESP32 WiFi-enabled microcontroller
+An IoT-based smart RFID attendance system using **ESP32**, **RC522 RFID module**, and **16x2 LCD Display**, with real-time data logging directly into **Google Sheets**. Designed for schools, colleges, or any organization that needs a simple and automated attendance solution.
 
-🪪 RC522 RFID module for tag scanning
 
-📟 16x2 LCD Display for user feedback
+🚀 Built with two powerful modes:  
+➕ **User Registration Mode**  
+📅 **Attendance Mode**
 
-📄 Google Sheets integration using Google Apps Script
+🕒 All attendance logs are recorded in **NST (Nepal Standard Time)**.
 
-🧠 Dual-mode system:
+---
 
-Registration Mode – Add new users with RFID UID and name
 
-Attendance Mode – Log attendance with date and time
 
-🌐 Real-time syncing over the internet
+## ⚙️ Features
 
-🕐 Timestamped records in NST
+- 📲 ESP32 WiFi-enabled microcontroller
+- 🪪 RC522 RFID module for tag scanning
+- 📟 16x2 LCD Display for user feedback
+- 📄 Google Sheets integration using Google Apps Script
+- 🧠 Dual-mode system:
+  - **Registration Mode** – Add new users with RFID UID and name
+  - **Attendance Mode** – Log attendance with date and time
+- 🌐 Real-time syncing over the internet
+- 🕐 Timestamped records in NST
 
-🧰 Hardware Required
+---
 
-Component	Quantity
-ESP32 Dev Board	1
-RC522 RFID Module	1
-16x2 LCD Display	1
-Jumper Wires	Several
-Breadboard (Optional)	1
-RFID Tags/Cards	As needed
-📦 Folder Structure
-bash
-Copy
-Edit
-📁 RFID-Attendance-ESP32/
-├── 📄 attendance.ino           # Main Arduino code
-├── 📄 credentials.h            # WiFi and Google Script credentials
-├── 📄 GoogleAppsScript.gs      # Script to connect to Google Sheets
-├── 📄 README.md                # This file
-🔌 Wiring Overview
+## 🧰 Hardware Required
 
-RC522 Pin	ESP32 Pin
-SDA	D21
-SCK	D18
-MOSI	D23
-MISO	D19
-IRQ	Not connected
-GND	GND
-RST	D22
-3.3V	3.3V
-💡 Make sure to power the RC522 with 3.3V only (not 5V)!
+| Component           | Quantity |
+|---------------------|----------|
+| ESP32 Dev Board     | 1        |
+| RC522 RFID Module   | 1        |
+| 16x2 LCD Display    | 1        |
+| Jumper Wires        | Several  |
+| Breadboard (Optional) | 1      |
+| RFID Tags/Cards     | As needed|
 
-☁️ Google Sheets Integration
-Create a Google Sheet.
+---
 
-Go to Extensions > Apps Script, paste the code from GoogleAppsScript.gs.
+## 📦 Folder Structure
 
-Deploy it as a Web App (with permissions: Anyone with the link).
+📁 RFID-Attendance-ESP32/ ├── 📄 attendance.ino # Main Arduino code ├── 📄 credentials.h # WiFi and Google Script credentials ├── 📄 GoogleAppsScript.gs # Script to connect to Google Sheets ├── 📄 README.md # This file
 
-Copy the Web App URL and paste it in your credentials.h.
 
-🔐 credentials.h Example
-cpp
-Copy
-Edit
+---
+
+## 🔌 Wiring Overview
+
+| RC522 Pin | ESP32 Pin |
+|-----------|-----------|
+| SDA       | D21       |
+| SCK       | D18       |
+| MOSI      | D23       |
+| MISO      | D19       |
+| IRQ       | Not connected |
+| GND       | GND       |
+| RST       | D22       |
+| 3.3V      | 3.3V      |
+
+> 💡 Make sure to power the RC522 with **3.3V only** (not 5V)!
+
+---
+
+## ☁️ Google Sheets Integration
+
+1. Create a new **Google Sheet**.
+2. Go to `Extensions > Apps Script`.
+3. Paste the code from `GoogleAppsScript.gs`.
+4. Deploy it as a **Web App**:
+   - **Execute as**: Me
+   - **Who has access**: Anyone
+5. Copy the Web App URL.
+6. Paste it inside your `credentials.h` file as shown below.
+
+---
+
+## 🔐 `credentials.h` Example
+
+```cpp
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 const char* scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
-▶️ Modes Explained
-🟢 Registration Mode
-Use the RFID tag to register new users. Their UID and name will be saved in the Google Sheet.
+```
 
-🔵 Attendance Mode
-Tap the tag to log the date and time of attendance. Duplicate entries for the same day are avoided.
+## ▶️ Modes Explained
+# 🟢 Registration Mode
+- Scan a new RFID tag.
+- The system prompts for user details.
+- UID and name are stored in Google Sheets.
 
-🌍 Timezone Configuration
-This system uses Nepal Standard Time (NST). Adjust Google Apps Script for other timezones if needed:
+# 🔵 Attendance Mode
+- Tap the tag to mark attendance.
+- Date and time are logged automatically.
+- Duplicate entries for the same day are prevented.
 
-javascript
-Copy
-Edit
-var timeZone = "Asia/Kathmandu"; // NST
-📸 Demo
-(Insert GIF or image of system in action – optional but cool!)
+## 🌍 Timezone Configuration
+This system uses Nepal Standard Time (NST). You can adjust the timezone in the Apps Script:
 
-✅ Future Enhancements
-Admin dashboard for data filtering
+``` var timeZone = "Asia/Kathmandu"; // NST
+```
 
-Email notifications on entry
+## ✅ Future Enhancements
+- 🖥️ Admin dashboard for data filtering and reporting
+- 📧 Email notifications on entry
+- 📲 NFC card and mobile tag support
 
-NFC card support
-
-🧠 Credits
-Made with 💡 and ❤️ by Sameer Sah.
+## 🧠 Credits
+Made with 💡 and ❤️ by **Sameer Sah**
 Inspired by the power of automation and microcontrollers.
 
-📜 License
-This project is licensed under the MIT License – feel free to use and modify!
 
-Let me know if you want this turned into a README.md file or want to add a badge or demo video link!
+
+---
+
+Let me know if you want me to generate the Google Apps Script code or the actual `.ino` code too — I’ve got your back!
+
+
+
+
+
