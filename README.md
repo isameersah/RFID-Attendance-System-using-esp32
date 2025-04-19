@@ -1,6 +1,8 @@
 # 🔐 RFID Attendance System using ESP32
 
-![RFID Attendance System Demo](https://electropeak.com/learn/wp-content/uploads/2019/05/RC522-RFID-Arduino-Tutorial.gif)
+<p align="center">
+  <img src="https://electropeak.com/learn/wp-content/uploads/2019/05/RC522-RFID-Arduino-Tutorial.gif" width="500" />
+</p>
 
 
 An IoT-based smart RFID attendance system using **ESP32**, **RC522 RFID module**, and **16x2 LCD Display**, with real-time data logging directly into **Google Sheets**. Designed for schools, colleges, or any organization that needs a simple and automated attendance solution.
