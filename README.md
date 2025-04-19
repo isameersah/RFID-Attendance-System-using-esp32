@@ -45,7 +45,11 @@ An IoT-based smart RFID attendance system using **ESP32**, **RC522 RFID module**
 
 ## 📦 Folder Structure
 
-📁 RFID-Attendance-ESP32/ ├── 📄 attendance.ino # Main Arduino code ├── 📄 credentials.h # WiFi and Google Script credentials ├── 📄 GoogleAppsScript.gs # Script to connect to Google Sheets ├── 📄 README.md # This file
+📁 RFID-Attendance-ESP32/  
+├── 📄 attendance.ino           # Main Arduino code  
+├── 📄 credentials.h            # WiFi and Google Script credentials  
+├── 📄 GoogleAppsScript.gs      # Script to connect to Google Sheets  
+├── 📄 README.md                # This file  
 
 
 ---
@@ -89,12 +93,12 @@ const char* scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
 ```
 
 ## ▶️ Modes Explained
-# 🟢 Registration Mode
+### 🟢 Registration Mode
 - Scan a new RFID tag.
 - The system prompts for user details.
 - UID and name are stored in Google Sheets.
 
-# 🔵 Attendance Mode
+### 🔵 Attendance Mode
 - Tap the tag to mark attendance.
 - Date and time are logged automatically.
 - Duplicate entries for the same day are prevented.
@@ -102,7 +106,8 @@ const char* scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
 ## 🌍 Timezone Configuration
 This system uses Nepal Standard Time (NST). You can adjust the timezone in the Apps Script:
 
-``` var timeZone = "Asia/Kathmandu"; // NST
+``` cpp
+   var timeZone = "Asia/Kathmandu"; // NST
 ```
 
 ## ✅ Future Enhancements
@@ -111,7 +116,7 @@ This system uses Nepal Standard Time (NST). You can adjust the timezone in the A
 - 📲 NFC card and mobile tag support
 
 ## 🧠 Credits
-Made with 💡 and ❤️ by **Sameer Sah**
+Made with 💡 and ❤️ by **Sameer Sah** <br>
 Inspired by the power of automation and microcontrollers.
 
 
