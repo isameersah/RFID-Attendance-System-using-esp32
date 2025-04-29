@@ -1,7 +1,7 @@
 # 🔐 RFID Attendance System using ESP32
 
 <p align="center">
-  <img src="https://electropeak.com/learn/wp-content/uploads/2019/05/RC522-RFID-Arduino-Tutorial.gif" width="400" />
+  <img src="https://i.imgur.com/mQoaWS8.jpeg" width="400" />
 </p>
 
 
