@@ -1,13 +1,8 @@
 # 📡 RFID-Based IoT Attendance System Using ESP32 & Google Sheets  
 > ⚡️ Real-time Cloud Logging | 🧠 Smart Automation | 🔐 Secure & Scalable
 
-![rfid-banner](https://your-image-link/banner.png)
+![rfid-banner](https://i.imgur.com/mQoaWS8.jpeg)
 
----
-
-## 🚀 Executive Summary
-
-The RFID Attendance System leverages **IoT (ESP32)** and **RFID (RC522)** modules to automate classroom attendance by logging entries directly into **Google Sheets** via **HTTP Webhooks**. It eliminates manual paperwork, reduces human error, and provides instant cloud-based data tracking and reporting — enabling modern, data-driven educational environments.
 ---
 
 ## 🧠 Overview
@@ -38,9 +33,7 @@ This project is a complete **IoT Attendance System** using:
 
 | RFID Scan | Google Sheet Log | Serial Monitor |
 |-----------|------------------|----------------|
-| ![scan](https://your-image-link/scan.gif) | ![sheet](https://your-image-link/sheet.gif) | ![serial](https://your-image-link/serial.gif) |
-
-> *(Replace links with your own images or gifs.)*
+| ![scan](https://i.imgur.com/cGQOfH3.png) | ![sheet](https://i.imgur.com/m0Ehexe.png) | ![serial](https://i.imgur.com/HcBQarB.png) |
 
 ---
 
@@ -57,8 +50,6 @@ This project is a complete **IoT Attendance System** using:
 - [ ] 📊 Admin dashboard with charts (Future)
 
 ---
-
-
 
 # 📡 RFID-Based IoT Attendance System Using ESP32 & Google Sheets
 
@@ -175,6 +166,8 @@ The RFID Attendance System revolutionizes traditional attendance marking. It’s
 
 ## 🧑‍💻 Contributors
 
+- 🧠 Supervised by: **Shishir Subedi**
+
 | 🙋‍♂️ Name                  | 💼 Role                         |
 |----------------------------|--------------------------------|
 | **Sameer Sah**             | 🚀 Project Lead & Developer     |
@@ -182,9 +175,7 @@ The RFID Attendance System revolutionizes traditional attendance marking. It’s
 | **Bibhuti Sigdel**         | 📝 Developer & Documentation    |
 | **Sanshree Shrestha**      | 🔍 Research & Data Handling     |
 | **Shraddha Budhathoki**    | 🎨 UI/UX Designer & Report Writer |
-| **Sagun Budhatho**         | 🧪 Assistant Developer & Tester  |
-|--------------------------------------------------------------|
-- 🧠 Supervised by: **Shishir Subedi**
+| **Sagun Budhathoki**         | 🧪 Assistant Developer & Tester  |
 
 ---
 
@@ -196,5 +187,5 @@ This project is open-source under the [MIT License](LICENSE).
 
 ## 🔗 Connect with Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE/)
-- 🐙 [GitHub](https://github.com/YOUR-USERNAME)
+- 💼 [LinkedIn](https://www.linkedin.com/in/isameersah/)
+- 🐙 [GitHub](https://github.com/isameersah)
