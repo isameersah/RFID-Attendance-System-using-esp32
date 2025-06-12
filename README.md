@@ -2,7 +2,7 @@
 > ⚡️ Real-time Cloud Logging | 🧠 Smart Automation | 🔐 Secure & Scalable
 
 <p align="center"> <img src="https://i.imgur.com/mQoaWS8.jpeg" alt-text="RFID-Based IoT System" width="400" /> </p>
----
+
 
 ## 🧠 Overview
 
