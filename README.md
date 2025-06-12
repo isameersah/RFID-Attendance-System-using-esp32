@@ -1,7 +1,7 @@
 # 📡 RFID-Based IoT Attendance System Using ESP32 & Google Sheets  
 > ⚡️ Real-time Cloud Logging | 🧠 Smart Automation | 🔐 Secure & Scalable
 
-![rfid-banner](https://i.imgur.com/mQoaWS8.jpeg)
+![rfid-banner](<p align="center"> <img src="https://i.imgur.com/mQoaWS8.jpeg" width="400" /> </p>)
 
 ---
 
