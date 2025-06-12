@@ -1,8 +1,7 @@
 # 📡 RFID-Based IoT Attendance System Using ESP32 & Google Sheets  
 > ⚡️ Real-time Cloud Logging | 🧠 Smart Automation | 🔐 Secure & Scalable
 
-![rfid-banner](<p align="center"> <img src="https://i.imgur.com/mQoaWS8.jpeg" width="400" /> </p>)
-
+<p align="center"> <img src="https://i.imgur.com/mQoaWS8.jpeg" alt-text="RFID-Based IoT System" width="400" /> </p>
 ---
 
 ## 🧠 Overview
@@ -15,7 +14,7 @@ This project is a complete **IoT Attendance System** using:
 - 🖥️ **LCD Display** (16x4 I2C)
 - 🔌 **Wi-Fi** integration for real-time updates
 
-> Built with no external libraries — only raw SPI, WiFi, and HTTPClient.
+> Built with no external libraries — only raw SPI, WiFi, and HTTPClient
 
 ---
 
@@ -189,3 +188,10 @@ This project is open-source under the [MIT License](LICENSE).
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/isameersah/)
 - 🐙 [GitHub](https://github.com/isameersah)
+
+## 📢 Attribution
+
+This project uses code and instructions originally created by [UtehStr](https://www.youtube.com/watch?v=r0Ndu2VYR2Y&t=159s&ab_channel=UtehStr).
+
+The documentation and additional features are developed independently by the contributors of this repo.
+
